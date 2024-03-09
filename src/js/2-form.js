@@ -29,9 +29,7 @@ function handlerSubmit(event) {
         return alert("All form fields must be filled in");
     }
 
-    const data = JSON.stringify({ email, message });
     localStorage.removeItem("feedback-form-state");
-    
     console.log({email, message});
 
 form.reset();
